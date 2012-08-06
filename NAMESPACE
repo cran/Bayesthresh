@@ -1,0 +1,22 @@
+useDynLib(Bayesthresh)
+
+export("Bayesthresh",
+	"Bayes.factor", 
+	"random.effects", 
+	"coef.Bayesthresh", 
+	"summary.Bayesthresh",
+	"ACGaussian",
+	"ACt",
+	"MCGaussian", 
+	"MCt", 
+	"NCGaussian", 
+	"NCt",
+	"predict.Bayesthresh",
+	"plot.random.effects",
+	"compVar")
+	
+
+S3method(predict, Bayesthresh)
+S3method(plot, random.effects)
+S3method(coef, Bayesthresh)
+S3method(summary, Bayesthresh)

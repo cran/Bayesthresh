@@ -1,10 +1,10 @@
 \name{Bayesthresh}
 \alias{Bayesthresh}
 
-\title{Bayesian thresholds mixed-effects models for categorial data}
+\title{Bayesian thresholds mixed-effects models for categorical data}
 
 \description{
-  This library fits a linear mixed model for ordinal categorical responses using
+  This package fits a linear mixed model for ordinal categorical responses using
 		Bayesian inference via Monte Carlo Markov Chains. Default is Nandran & Chen algorithm
 		using Gaussian link function and saving just the summaries of the chains.
   Among the options, package allow for two other options of algorithms, for using

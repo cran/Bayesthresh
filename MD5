@@ -1,4 +1,4 @@
-c68ca96c1fb8dc3019fd3f0c1fe817f6 *DESCRIPTION
+e33a45ee693436d529c3b1a99f3afb23 *DESCRIPTION
 637174c4b580e5e2f976596269734abc *NAMESPACE
 4b742abdb54c0f674c2f06b880d63a6f *R/Bayes.factor.R
 ca79ffb9476bc8c8726ec09db03183f7 *R/Bayesthresh.R
@@ -12,7 +12,7 @@ bd4a5ef6aad4293f4ff514233e794b7e *data/sensory.rda
 ca591a030c5407c420cdcba3a31c06f2 *man/ACGaussian.Rd
 e02f57831b3a1c651460698503742667 *man/ACt.Rd
 0d794c2437253de1db61ec284b8fb9b1 *man/Bayes.factor.Rd
-5d06b782074a983feb965f728e536ad8 *man/Bayesthresh.Rd
+2c1b8d20e1bbfb0461662fc6029f988a *man/Bayesthresh.Rd
 5f1450d8675c66f5a4d7f56569408e4a *man/MCGaussian.Rd
 3f0ab3eb6a77313f0e041b975e9819ef *man/MCt.Rd
 f1ccbd0f52aa5675a6c605d736f9ab21 *man/NCGaussian.Rd

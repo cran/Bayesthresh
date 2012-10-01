@@ -11,11 +11,10 @@
 		Student's "t" link function and for saving the full chains.
 }
 
-\usage{
-       Bayesthresh(formula, data, subset, na.action, A=NULL,
-																		algor = list(algorithm="NC", link="Gaussian"),
-							           Write, priors = list(ru = 10, su = 2, dre = 20, dse = 5), 
-                  burn = 100, jump = 10, ef.iter = 4000, model=TRUE)
+\usage{Bayesthresh(formula, data, subset, na.action, A=NULL,
+ algor = list(algorithm="NC", link="Gaussian"),
+ Write, priors = list(ru = 10, su = 2, dre = 20, dse = 5), 
+ burn = 50, jump = 2, ef.iter = 4000, model=TRUE)
 }
 \arguments{
   \item{formula}{a two-sided linear formula object describing the fixed-effects part of the model, 
@@ -34,7 +33,7 @@
   \item{priors}{priors is a list that contains the parameters of the priors used to estimate the
 					 variance components of random effects}
   \item{burn, jump, ef.iter}{are of the arguments of iteraction. By default the burn, jump and ef.iter
-    (effective iteractions) are 100, 5 e 1000 respectively}
+    (effective iteractions) are 50, 2 e 4000 respectively}
   \item{model}{logical scalar.  If \code{FALSE} the model frame in slot \code{frame} is truncated to zero rows.}
 }
 \details{

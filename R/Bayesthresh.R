@@ -1629,7 +1629,7 @@ print.Bayesthresh <- function(x,...)
 ### The main function
 Bayesthresh <-function(formula, data, subset, na.action, A=NULL, algor = list(algorithm = "NC", link = "Gaussian"),
 																						Write = FALSE, priors = list(ru=10, su=2, dre=20, dse=5),
-																						burn = 100, jump = 10, ef.iter = 4000, model=TRUE)
+																						burn = 50, jump = 2, ef.iter = 4000, model=TRUE)
 				### Linear Mixed-Effects in R with threshold models
 {
 				mc <- match.call()

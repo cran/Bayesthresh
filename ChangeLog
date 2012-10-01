@@ -1,0 +1,4 @@
+2012-10-01 Fabio Mathias Correa  <fmcorrea@uesc.br>
+
+	* Changes in initial parameters for the MCMC process
+	* Change in the summary function Bayes.factor

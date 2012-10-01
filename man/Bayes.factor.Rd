@@ -5,11 +5,12 @@
 
 \description{Compares two models by evaluating their Bayes factor}
 
-\usage{Bayes.factor(model1, model2)}
+\usage{Bayes.factor(model1, model2, inter=TRUE)}
 
 \arguments{
   \item{model1}{object of the class model \code{"Bayesthresh"}} 
   \item{model2}{object of the class model \code{"Bayesthresh"}}
+		\item{inter}{If TRUE, print to scale for interpretation of the Bayes factor}
 }
 
 \details{
@@ -41,16 +42,15 @@ Sacarose <- factor(sensory$sacarose)
 # Model with Gaussian link
 
 dex1 <- Bayesthresh(flavor ~ (1|Consumer) + Sacarose, burn = 0, jump = 1,
-																		 ef.iter = 10, data=sensory) 
+        ef.iter = 10, data=sensory) 
 summary(dex1)
 
 #### Model 2
 
 # Model with t-Student link
 
-dex2 <- Bayesthresh(flavor ~ (1|Consumer) + Sacarose, burn = 0, jump = 1, 
-																			ef.iter = 10, algor=list(algorithm="NC", link="t"), 
-																			data=sensory) 
+dex2 <- Bayesthresh(flavor ~ (1|Consumer) + Sacarose, burn = 0, jump = 1,
+        ef.iter = 10, algor=list(algorithm="NC", link="t"),data=sensory) 
 summary(dex2)
 
 Bayes.factor(dex1,dex2)

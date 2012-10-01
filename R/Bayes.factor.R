@@ -1,4 +1,4 @@
-Bayes.factor <- function(model1, model2)
+Bayes.factor <- function(model1, model2, inter=TRUE)
 {
 	if(!inherits(model1, "Bayesthresh"))
 		stop("Model1 does not belong a class Bayesthresh")
@@ -18,5 +18,19 @@ Bayes.factor <- function(model1, model2)
 	cat("Model 2:", deparse(model2$formula), "\n")
 	cat("\n \n")
 	print(result)
+	if(inter==TRUE){
+					cat("\n","Scale for interpretation of the Bayes factor","\n")
+					cat("--------------------------------------------","\n")
+					cat("B_ij                Evidence in favor of M_1","\n")
+					cat("--------------------------------------------","\n")
+					cat("  <1                 negative (favor of M_2)","\n")
+					cat("1 to 3                             doubtfull","\n")
+					cat("3 to 10                          substantial","\n")
+					cat("10 to 30                              strong","\n")
+					cat("30 to 100                        very strong","\n")
+					cat(" >100                               decisive","\n")
+					cat("--------------------------------------------","\n")
+					cat("Jeffreys(1961)","\n")
+		}
 }
 

@@ -1,7 +1,8 @@
-e33a45ee693436d529c3b1a99f3afb23 *DESCRIPTION
+344da2fdd6d9bbbe824e4dfe83fadf00 *ChangeLog
+887f45889eda6062beec80f929899592 *DESCRIPTION
 637174c4b580e5e2f976596269734abc *NAMESPACE
-4b742abdb54c0f674c2f06b880d63a6f *R/Bayes.factor.R
-ca79ffb9476bc8c8726ec09db03183f7 *R/Bayesthresh.R
+61e49276d3548f6b4199d30cb27630d4 *R/Bayes.factor.R
+a1a2b02ccadaff165b99099ca6b0752a *R/Bayesthresh.R
 97d72f8e990f3a229d4ddd7408ccb010 *R/coef.Bayesthresh.R
 2433b9d274c1b12429f632c0eee7fa31 *R/compVar.R
 f52b3e962fcf1c240d68304c2b98d08c *R/plot.random.effects.R
@@ -11,8 +12,8 @@ bd4a5ef6aad4293f4ff514233e794b7e *data/sensory.rda
 3b4c692402cf955ad72ec62c0a1beb17 *inst/CITATION
 ca591a030c5407c420cdcba3a31c06f2 *man/ACGaussian.Rd
 e02f57831b3a1c651460698503742667 *man/ACt.Rd
-0d794c2437253de1db61ec284b8fb9b1 *man/Bayes.factor.Rd
-2c1b8d20e1bbfb0461662fc6029f988a *man/Bayesthresh.Rd
+bd6b443a851de7cb18ec62be750a9a68 *man/Bayes.factor.Rd
+6851787816acc28d1629c2dc2d42da67 *man/Bayesthresh.Rd
 5f1450d8675c66f5a4d7f56569408e4a *man/MCGaussian.Rd
 3f0ab3eb6a77313f0e041b975e9819ef *man/MCt.Rd
 f1ccbd0f52aa5675a6c605d736f9ab21 *man/NCGaussian.Rd

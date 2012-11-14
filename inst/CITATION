@@ -1,7 +1,7 @@
 citHeader("To cite Bayesthres in publications use:")
 
 citEntry(entry  = "Manual",
-         title  = "Bayesthres",
+         title  = "Bayesthresh: A package for categorical data analysis using Bayesian inference",
          author = "Author: Fabio Mathias Correa, Julio Silvio de S. Bueno Filho",
          organization = "Universidade Estadual de Santa Cruz (Ilheus/BA) and Universidade Federal de Lavras (Lavras/MG)",
          address      = "Rod. Ilheus-Itabuna, km 16, Bahia - Brazil",

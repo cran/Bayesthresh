@@ -13,7 +13,7 @@
 
 \usage{Bayesthresh(formula, data, subset, na.action, A=NULL,
  algor = list(algorithm="NC", link="Gaussian"),
- Write, priors = list(ru = 10, su = 2, dre = 20, dse = 5), 
+ Write=FALSE, priors = list(ru = 10, su = 2, dre = 20, dse = 5), 
  burn = 50, jump = 2, ef.iter = 4000, model=TRUE)
 }
 \arguments{
@@ -28,8 +28,8 @@
   \item{A}{Matrix of variance-covariance of random effects.}
   \item{algor}{is a list that contains the name of the algorithm to be used. By default the algorithm 
 						is the NC with function link Gaussian}
-  \item{Write}{the Write is a function that by default is FALSE. If TRUE, the function saves the 
-						iterations of the sampling process in the file output.txt}
+  \item{Write}{the Write is a function that by default is FALSE. If TRUE, the function save the 
+						iterations of the sampling processin the matrix}
   \item{priors}{priors is a list that contains the parameters of the priors used to estimate the
 					 variance components of random effects}
   \item{burn, jump, ef.iter}{are of the arguments of iteraction. By default the burn, jump and ef.iter
@@ -65,12 +65,13 @@
 # Not run
 data(sensory)
 
-Consumer <- factor(sensory$consumer)
-Sacarose <- factor(sensory$sacarose)
+Consumer <- factor(sensory$consumer) # Random effect
+Sacarose <- factor(sensory$sacarose) # Fixed effect
 
 #### Model 
 # Not run
-dex1 <- Bayesthresh(flavor ~ (1|Consumer) + Sacarose, burn = 0, jump = 1, ef.iter = 10, data=sensory) 
+dex1 <- Bayesthresh(cor ~ (1|Consumer) + Sacarose, 
+																				burn = 0, jump = 1, ef.iter = 10, data=sensory) 
 summary(dex1)
 
 }

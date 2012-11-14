@@ -1,4 +1,19 @@
+2013-03-21 Fabio Mathias Corrêa <fmcorrea@uesc.br>
+	* Change in plot.random.effects()
+	* Change in fixed.effects()
+	* Removed .FirstLib() 
+
+2012-10-31 Fabio Mathias Correa <fmcorrea@uesc.br>
+
+	* Change in the argument 'Write'
+			Removing the file output.txt. The chain is saved in an matrix
+	* Inclusion of function MCMCsample()
+	* Change in random.effects()
+	* The plot.random.effects() has two options for credibility interval 
+
 2012-10-01 Fabio Mathias Correa  <fmcorrea@uesc.br>
 
 	* Changes in initial parameters for the MCMC process
 	* Change in the summary function Bayes.factor
+
+
